@@ -5,7 +5,7 @@ This class defines the Donor Objet all the references of donor in the app will b
  */
 public class Donor
 {
-    private String name;    //Name of the donor indivudual/Institute
+    private String name;    //Name of the donor individual/Institute
     private boolean type;   // type of the donor true if the donor is an organization, false if the donor is an indivisual.
     private String phno;    //Phone number
     private String address; //Address

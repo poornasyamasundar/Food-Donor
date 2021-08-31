@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button btn = findViewById(R.id.button);
         TextView txt = findViewById(R.id.data);
+        Button profileBtn = findViewById(R.id.userProfile);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,6 +28,19 @@ public class MainActivity extends AppCompatActivity {
                 openDonorList();
             }
         });
+
+        profileBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showProfile();
+            }
+        });
+    }
+
+    public void showProfile()
+    {
+        Intent intent = new Intent( this , userProfile.class);
+        startActivity(intent);
     }
 
     public void openDonorList()

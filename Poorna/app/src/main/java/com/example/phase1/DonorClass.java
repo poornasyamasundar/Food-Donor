@@ -11,7 +11,8 @@ import java.util.ArrayList;
     This Class contains only static functions which can be used to manipulate the donors list.
     The Database Table containing the Donor list is DonorList,
  */
-public class DonorClass
+public class
+DonorClass
 {
     public static Donor getDonor( String name )     // Given a donor's name this function returns the corresponding donor object from the database.
     {
@@ -90,7 +91,7 @@ public class DonorClass
         }
         catch(Exception e )
         {
-            Log.e("Error while uppdating the data", e.getMessage());
+            Log.e("Error while updating the data", e.getMessage());
         }
         return false;
     }
