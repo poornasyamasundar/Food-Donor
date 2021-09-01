@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/parent">
+
+
+    <EditText
+        android:id="@+id/edttextname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/edttxtusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="UserName"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edttextname"/>
+
+    <EditText
+        android:id="@+id/edttxtmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edttxtusername"/>
+
+    <EditText
+        android:id="@+id/edttxtpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edttxtmail"/>
+
+    <EditText
+        android:id="@+id/edttxtrepass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Re-Enter Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edttxtpass"/>
+
+    <EditText
+        android:id="@+id/edttxtaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Adress"
+        android:inputType="textPostalAddress"
+        android:minHeight="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edttxtrepass"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="Gender:"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edttxtaddress"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/radiomale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radiofemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Female" />
+
+        <RadioButton
+            android:id="@+id/radioother"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="other" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="Register"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/chkagree"/>
+
+    <CheckBox
+        android:id="@+id/chkagree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I Agree"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView3"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is our lisence agreement.You can share this app anywhere that you want and use it however you want.Just remember to enjoy."
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/radioGroup"/>
+
+</RelativeLayout>
