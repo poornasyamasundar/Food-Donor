@@ -18,9 +18,9 @@ import java.util.Base64;
 public class Encryption {
     
     private static final String algo = "AES";
-    private byte[] keyValue;
+    private static byte[] keyValue;
     
-    private Key generateKey() {
+    private static Key generateKey() {
         Key key = new SecretKeySpec(keyValue,algo);
         return key;
     }
@@ -30,25 +30,39 @@ public class Encryption {
         keyValue = key.getBytes();
     }
     
-    public String encrypt(String data) throws Exception {
-        Key key = generateKey();
-        Cipher c = Cipher.getInstance(algo);
-        c.init(Cipher.ENCRYPT_MODE, key);
-        byte[] encVal = c.doFinal(data.getBytes());
-        Base64.Encoder encoder = Base64.getEncoder();
-        String encryptedValue = new String(encoder.encode(encVal));
-        return encryptedValue;
+    public static String encrypt(String data)  {
+        try{
+            String keyy="lv39eptlvuhaqqsr";
+            keyValue = keyy.getBytes();
+            Key key = generateKey();
+            Cipher c = Cipher.getInstance(algo);
+            c.init(Cipher.ENCRYPT_MODE, key);
+            byte[] encVal = c.doFinal(data.getBytes());
+            Base64.Encoder encoder = Base64.getEncoder();
+            String encryptedValue = new String(encoder.encode(encVal));
+            return encryptedValue;
+        } catch(Exception ex){
+            System.out.println("Error while encrypting" + ex.toString());
+        }
+        return null;
     }
     
-    public String decrypt(String encryptedData) throws Exception {
-        Key key = generateKey();
-        Cipher c = Cipher.getInstance(algo);
-        c.init(Cipher.DECRYPT_MODE, key);
-        Base64.Decoder decoder = Base64.getDecoder();
-        byte[] decordedValue = decoder.decode(encryptedData);
-        byte[] decValue = c.doFinal(decordedValue);
-        String decryptedValue = new String(decValue);
-        return decryptedValue;
+    public static String decrypt(String encryptedData) {
+        try {
+            String keyy="lv39eptlvuhaqqsr";
+            keyValue = keyy.getBytes();
+            Key key = generateKey();
+            Cipher c = Cipher.getInstance(algo);
+            c.init(Cipher.DECRYPT_MODE, key);
+            Base64.Decoder decoder = Base64.getDecoder();
+            byte[] decordedValue = decoder.decode(encryptedData);
+            byte[] decValue = c.doFinal(decordedValue);
+            String decryptedValue = new String(decValue);
+            return decryptedValue;
+        } catch (Exception ex){
+            System.out.println("Error while " + ex.toString());
+        }
+        return null;
     }
     
     
