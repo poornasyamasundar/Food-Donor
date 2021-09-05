@@ -1,3 +1,11 @@
+
+/*
+
+This class provides a function that establishes a connection with the database using SQL queries
+
+ */
+
+
 package com.example.phase1;
 
 import android.os.StrictMode;
