@@ -1,3 +1,16 @@
+
+/*
+
+This is a class whose instance stores the information of a receiver who currently wants supply of the food.
+This class has the details like the address, phone number etc.
+While receiving, if you want to change some of the details temporarily, then those details will be stored 
+in the object of this class.
+SO , to deal with all the cases where we need these details, it would be easier to deal with the object 
+of this type
+
+So, this class has only getters and setters to deal with the property variables.
+*/
+
 package com.example.phase1;
 
 public class CurrentReceiver
