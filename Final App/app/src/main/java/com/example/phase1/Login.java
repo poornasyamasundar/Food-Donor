@@ -1,3 +1,11 @@
+/*
+    This class handles the Registration of a new User.
+    This Class takes all the necessary details of the new user, creates a new user and inserts the user into the database.
+    The function InitViews initializes all the fields of the Registration Page.
+    ValidateData() validates the entered data.
+    when the submit button is clicked the initRegister function inserts the user data into the database
+*/
+
 package com.example.phase1;
 
 import androidx.appcompat.app.AppCompatActivity;
