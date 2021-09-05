@@ -1,3 +1,13 @@
+
+/*
+This class wraps all the details that belong to a particualr user.
+This is a class whose instance stores the information of a user who has registered for our services.
+This class has the details like the name, address, phone number, Gender , userName , password , email.
+
+This is for administration usage.
+
+*/
+
 package com.example.phase1;
 
 public class User
