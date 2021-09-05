@@ -52,6 +52,7 @@ public class LoginEnter extends AppCompatActivity {
                     SharedPreferences.Editor editor = pref.edit();
                     editor.putString("username", u);
                     editor.commit();
+                    Toast.makeText(LoginEnter.this,"Login Successful", Toast.LENGTH_SHORT).show();
                     finish();
                 }
             }

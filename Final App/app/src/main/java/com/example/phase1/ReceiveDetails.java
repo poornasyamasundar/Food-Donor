@@ -70,7 +70,18 @@ public class ReceiveDetails extends AppCompatActivity {
                     r.setPhno(phone.getText().toString());
                     r.setQuantity(Integer.valueOf(meals.getText().toString()));
 
+                    Receiver receiver = new Receiver();
+                    receiver.setName(r.getName());
+                    receiver.setEmail(r.getEmail());
+                    receiver.setPhno(r.getPhno());
+                    receiver.setAddress(r.getAddress());
+
                     CurrentReceiverClass.insertCurrentReceiver(r);
+                    
+                    if( ReceiverClass.getReceiver(receiver.getName()) == null ) {
+                        ReceiverClass.insertReceiver(receiver);
+                    }
+                    Toast.makeText(ReceiveDetails.this, "You're now an available Receiver", Toast.LENGTH_SHORT).show();
                     finish();
                 }
             }

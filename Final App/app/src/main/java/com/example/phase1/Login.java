@@ -60,6 +60,7 @@ public class Login extends AppCompatActivity {
                 user.setPassword(Encryption.encrypt(edttxtpass.getText().toString()));
                 user.setArea(edttxtaddress.getText().toString());
                 UserClass.insertUser(user);
+                Toast.makeText(this, "Successfully registered", Toast.LENGTH_SHORT).show();
                 finish();
             } else {
                 Toast.makeText(this, "You need to agree to the licence agrement", Toast.LENGTH_SHORT).show();

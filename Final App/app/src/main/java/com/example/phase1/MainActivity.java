@@ -116,7 +116,15 @@ public class MainActivity extends AppCompatActivity {
         newComment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openNewCommentActivity();
+
+                if( pref.getString("username", null ) == null )
+                {
+                    Toast.makeText(MainActivity.this, "Login to Comment", Toast.LENGTH_SHORT).show();
+                }
+                else
+                {
+                    openNewCommentActivity();
+                }
             }
         });
 
@@ -205,44 +213,20 @@ public class MainActivity extends AppCompatActivity {
     {
         Intent intent = new Intent(this, NewComment.class);
         startActivity(intent);
-        this.recreate();
+        startActivity(getIntent());
     }
 
     public void openProfile()
     {
         Intent intent = new Intent(this, UserProfile.class);
         startActivity(intent);
-        userprofile = (Button) findViewById(R.id.user_profile);
-        String PREF_NAME = "PreName";
-        int PRIVATE_MODE = 0;
-        SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0);
-        if( pref.getString("username", null ) == null )
-        {
-            userprofile.setText("Login");
-        }
-        else
-        {
-            userprofile.setText("View Profile");
-        }
-        this.recreate();
+        startActivity(getIntent());
     }
 
     public void openLogin()
     {
         Intent intent = new Intent(this, LoginEnter.class);
         startActivity(intent);
-        userprofile = (Button) findViewById(R.id.user_profile);
-        String PREF_NAME = "PreName";
-        int PRIVATE_MODE = 0;
-        SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0);
-        if( pref.getString("username", null ) == null )
-        {
-            userprofile.setText("Login");
-        }
-        else
-        {
-            userprofile.setText("View Profile");
-        }
-        this.recreate();
+        startActivity(getIntent());
     }
 }

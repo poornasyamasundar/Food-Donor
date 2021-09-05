@@ -6,6 +6,13 @@
     tools:context=".MainActivity"
     android:id="@+id/parent">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
 
     <EditText
         android:id="@+id/edttextname"
@@ -141,5 +148,7 @@
         android:text="This is our lisence agreement.You can share this app anywhere that you want and use it however you want.Just remember to enjoy."
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/radioGroup"/>
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>

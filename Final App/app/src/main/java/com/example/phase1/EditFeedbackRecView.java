@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -42,12 +43,14 @@ public class EditFeedbackRecView extends RecyclerView.Adapter<EditFeedbackRecVie
             public void onClick(View view) {
                 list.get(position).setComment(holder.feedback.getText().toString());
                 FeedBackClass.modifyComment(list.get(position));
+                Toast.makeText(holder.itemView.getContext(), "Successfully Saved", Toast.LENGTH_SHORT).show();
             }
         });
         holder.delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FeedBackClass.deleteComment(list.get(position));
+                Toast.makeText(holder.itemView.getContext(), "Successfully Deleted", Toast.LENGTH_SHORT).show();
                 list.remove(position);
                 notifyDataSetChanged();
             }

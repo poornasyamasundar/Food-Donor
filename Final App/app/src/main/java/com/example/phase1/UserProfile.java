@@ -76,6 +76,7 @@ public class UserProfile extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 CurrentDonorsClass.deleteCurrentDonor(user.getName());
+                Toast.makeText(UserProfile.this, "Donate Request Withdrawn", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -83,6 +84,7 @@ public class UserProfile extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 CurrentReceiverClass.deleteCurrentReceiver(user.getName());
+                Toast.makeText(UserProfile.this, "Receive Request Withdrawn", Toast.LENGTH_SHORT).show();
             }
         });
 

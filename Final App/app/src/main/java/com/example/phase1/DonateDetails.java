@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -71,6 +72,20 @@ public class DonateDetails extends AppCompatActivity {
                     d.setQuantity(Integer.valueOf(meals.getText().toString()));
 
                     CurrentDonorsClass.insertCurrentDonor(d);
+                    Donor donor = new Donor();
+                    donor.setName(d.getName());
+                    donor.setEmail(d.getEmail());
+                    donor.setPhno(d.getPhno());
+                    donor.setAddress(d.getAddress());
+                    donor.setNoOfDonations(donor.getNoOfDonations()+d.getQuantity());
+                    if( DonorClass.getDonor(donor.getName()) == null ) {
+                        Log.d("getDonor is NULL", "yes");
+                        DonorClass.insertDonor(donor);
+                    }
+                    else {
+                        DonorClass.updateDonor(donor);
+                    }
+                    Toast.makeText(DonateDetails.this, "You're now an available Donor", Toast.LENGTH_SHORT).show();
                     finish();
                 }
             }

@@ -44,6 +44,7 @@ public class NewComment extends AppCompatActivity {
                 else
                 {
                     FeedBackClass.addComment(user.getName(), feedback.getText().toString());
+                    Toast.makeText(NewComment.this,"Comment Added Successfully", Toast.LENGTH_SHORT).show();
                     finish();
                 }
             }

@@ -15,7 +15,7 @@ public class ReceiverClass
         Receiver d = new Receiver();
         if( connection == null )
         {
-            return d;
+            return null;
         }
         try {
             Statement st = connection.createStatement();
@@ -26,14 +26,15 @@ public class ReceiverClass
                 d.setAddress(rs.getString("address"));
                 d.setEmail(rs.getString("email"));
                 d.setPhno(rs.getString("phone"));
+                return d;
             }
-            return d;
+            return null;
         }
         catch ( Exception e )
         {
             Log.e("Error is", e.getMessage());
         }
-        return d;
+        return null;
     }
 
     public static boolean insertReceiver( Receiver receiver )

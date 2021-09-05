@@ -21,7 +21,7 @@ public class DonorClass
         Donor d = new Donor();
         if( connection == null )
         {
-            return d;
+            return null;
         }
         try {
             Statement st = connection.createStatement();
@@ -42,14 +42,15 @@ public class DonorClass
                     d.setType(false);
                 }
                 d.setNoOfDonations(rs.getInt("noofdonations"));
+                return d;
             }
-            return d;
+            return null;
         }
         catch ( Exception e )
         {
             Log.e("Error in getting donor", e.getMessage());
         }
-        return d;
+        return null;
     }
 
     public static boolean insertDonor(@NonNull Donor donor )        // This function insert a new donor into the object, note: this function shouldn't be used if the donor is already
