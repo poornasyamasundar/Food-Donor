@@ -1,3 +1,11 @@
+/*
+
+This function is used to manipulate the ReceiverList viewing page of the app.
+We pass the required data to the adapter and then set this adapter to the RecyclerView
+
+*/
+
+
 package com.example.phase1;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -6,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
-// This function is used to manipulate the ReceiverList viewing page of the app.
+
 public class ReceiverListActivity extends AppCompatActivity {
 
     private RecyclerView receiverList;
