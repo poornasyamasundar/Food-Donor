@@ -1,3 +1,11 @@
+/*
+    This class handles the home page of the app. 
+    All the other activities are opened from this activity.
+    The straight forward ones are opening all the lists
+    There is a recycler view to display feedbacks.
+    The Total number of users, donors, receivers are also displayed in the home page.
+    Most of the code is straight forward.
+*/
 package com.example.phase1;
 
 import androidx.appcompat.app.AppCompatActivity;
