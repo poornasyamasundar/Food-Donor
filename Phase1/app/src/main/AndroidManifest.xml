@@ -28,6 +28,11 @@
         <activity
             android:name=".UserProfile"
             android:exported="true" />
+        
+        <activity
+            android:name=".FeedbackPage"
+            android:exported="true" />
+        
         <activity
             android:name=".ReceiverListActivity"
             android:exported="true" />
