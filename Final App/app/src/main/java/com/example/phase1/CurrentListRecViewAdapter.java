@@ -1,3 +1,6 @@
+/*
+    This class acts as the Adapter for the Recycler view of available donors/current donors in the app
+*/
 package com.example.phase1;
 
 import android.content.Intent;
