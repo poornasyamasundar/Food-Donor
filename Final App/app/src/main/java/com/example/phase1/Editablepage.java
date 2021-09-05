@@ -1,3 +1,12 @@
+
+/*
+
+This class is used to define the logic of the page that provides an option to the user to change some of his basic details and save those changes into the database.
+This sets the text of the TextView and EditView elements present in the related page whenever the page is opened.
+It also implements onClickListener's for the buttons present in that page.
+
+*/
+
 package com.example.phase1;
 
 import androidx.appcompat.app.AppCompatActivity;
