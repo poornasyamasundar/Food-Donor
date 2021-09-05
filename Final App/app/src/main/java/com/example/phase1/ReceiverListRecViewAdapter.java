@@ -1,3 +1,6 @@
+/*
+    This class acts as the Adapter for the Recycler view of Receivers in the app
+*/
 package com.example.phase1;
 
 import android.content.Intent;
@@ -37,7 +40,7 @@ public class ReceiverListRecViewAdapter extends RecyclerView.Adapter<ReceiverLis
         holder.receiveraddress.setText(holder.receiveraddress.getText().toString()+list.get(position).getAddress());
         holder.receiveremail.setText(holder.receiveremail.getText().toString()+list.get(position).getEmail());
 
-        holder.getDir.setOnClickListener(new View.OnClickListener() {
+        holder.getDir.setOnClickListener(new View.OnClickListener() {           //Allows the user to see the location in google maps app.
             @Override
             public void onClick(View view) {
                 Uri gmmIntentUri = Uri.parse("google.navigation:q="+list.get(position).getAddress());
