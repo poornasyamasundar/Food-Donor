@@ -1,3 +1,22 @@
+
+/*
+    This Class contains only static methods which can be used to manipulate the users database.
+    
+    It provides methods like:
+    getUser - this returns an object of the type User that has all the details by grabbing the information from the Users database using the name which
+                        is unique.
+    insertUser - this takes in an object of the type User and inserts this data into the Users database.
+                           
+    
+    updateUser - this updates the details of the  user if his/her details are already there in the Users database and return true.
+                         If this user is not there in the Users database, then this method returns false.
+                         
+    checkUser - this method checks if a user is present in the Users database and returns true if present, else returns false.
+                         
+    getCount - returns the total number of users registered in our app
+ 
+ */
+
 package com.example.phase1;
 
 import android.content.SharedPreferences;
