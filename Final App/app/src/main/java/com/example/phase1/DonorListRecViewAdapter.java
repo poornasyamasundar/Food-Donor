@@ -1,3 +1,7 @@
+/*
+    This class acts as the Adapter for the Recycler view of Donors in the app
+    The Entire Class is straight forward.
+*/
 package com.example.phase1;
 
 import static androidx.core.content.ContextCompat.startActivity;
@@ -45,7 +49,7 @@ public class DonorListRecViewAdapter extends RecyclerView.Adapter<DonorListRecVi
         {
             holder.image.setImageResource(R.drawable.institute);
         }
-        holder.getDir.setOnClickListener(new View.OnClickListener() {
+        holder.getDir.setOnClickListener(new View.OnClickListener() {           //Allows the user to see the location in google maps app.
             @Override
             public void onClick(View view) {
                 Uri gmmIntentUri = Uri.parse("google.navigation:q="+list.get(position).getAddress());
