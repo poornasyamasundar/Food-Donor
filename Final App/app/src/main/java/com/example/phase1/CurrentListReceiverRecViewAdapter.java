@@ -44,7 +44,7 @@ public class CurrentListReceiverRecViewAdapter extends RecyclerView.Adapter<Curr
         holder.quantity.setText(holder.quantity.getText().toString() + list.get(position).getQuantity());
         holder.getDir.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) {        //Allows the user to see the location in google maps app.
                 Uri gmmIntentUri = Uri.parse("google.navigation:q="+list.get(position).getLocality());
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
                 mapIntent.setPackage("com.google.android.apps.maps");
