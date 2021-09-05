@@ -1,3 +1,26 @@
+
+/*
+
+This class provides static methods to manipulate the data that is stored in the database that deals with the currently willing receivers.
+It provides methods like:
+    getCurrentReceiver - this returns an object of the type CurrentReceiver that has all the required details by grabbing the information from the Receivers database using the 
+                        name which is unique.
+                        
+    insertCurrentReceiver - this takes in an object of the type CurrentReceiver and inserts this data into the CurrentReceivers database.
+                           
+    
+    updateCurrentReceiver - this updates the details of the current receiver if his details are already there in the CurrentReceivers database and return true.
+                         If this receiver is not there in the CurrentReceivers database, then this method returns false.
+                         
+    deleteCurrentReceiver - this method deletes a receiver and his details from the CCurrentReceivers database and returns true.
+                            If the receiver is not present in the CurrentReceivers database, it returns false.
+             
+     getAllCurrentReceivers - this method returns a list of all the currently willing receivers and their respective details, each in the form of CurrentReceiver object.
+                         
+
+*/
+
+
 package com.example.phase1;
 
 import android.util.Log;
