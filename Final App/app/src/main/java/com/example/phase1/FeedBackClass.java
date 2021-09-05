@@ -1,3 +1,20 @@
+
+/*
+
+This class is used to get the data from the feedbacks database and insert data/ delete data into the database.
+
+getAllComments - this returns a list of objects of the type feedback containing all the comments by all the users and other info related to each comment.
+
+getComments - this returns a list of objects of the type feedback containing all the comments given by the specified user and other info related to each comment.
+
+addComment - this adds a comment and some other related info of that comment into the database.
+
+deleteComment - this deletes a comment given by its id from the database
+
+modifyComment - this modifies a comment given by its id in the database
+
+*/
+
 package com.example.phase1;
 
 import android.os.Build;
