@@ -1,13 +1,10 @@
 /*
-
-This class provides methods that are used in the app for security.
-It uses the already present Encryption libraries in java.
-Given a string, encrypt method returns it's encrypted form
-Given the encrypted string ,decrypt method returns the original string.
-
+    This Class implements the password security of the app
+    the password is encrypted using java's standared libraries, the encrypted password is stored in the database.
+    the function encrypt does the above task.
+    Conversly the function decrypt decrypts the encrypted password into the original password.
+    This function is used only once, i.e., during editing the password.
 */
-
-
 package com.example.phase1;
 
 import java.security.Key;
