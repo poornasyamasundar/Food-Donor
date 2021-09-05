@@ -1,3 +1,13 @@
+
+/*
+
+This is a class that has the logic related to the page that verifies/edits details of the user (for temporary use) if they want to receive help from others
+It sets the text of the EditView and TextView elements.
+It also implements the onCLickListener's for the buttons present in the related page
+It also has some methods that verifies the format of the data entered by the user
+
+*/
+
 package com.example.phase1;
 
 import androidx.annotation.Nullable;
