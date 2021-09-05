@@ -1,3 +1,24 @@
+/*
+
+This class provides static methods to manipulate the data that is stored in the database that deals with the currently willing donars.
+It provides methods like:
+    getCurrentDonar - this returns an object of the type CurrentDonar that has all the required details by grabbing the information from the Donars database using the name which
+                        is unique.
+    insertCurrentDonar - this takes in an object of the type CurrentDonar and inserts this data into the CurrentDOnars database.
+                           
+    
+    updateCurrentDonor - this updates the details of the current donar if his details are already there in the CurrentDonars database and return true.
+                         If this donar is not there in the CurrentDonars database, then this method returns false.
+                         
+    deleteCurrentDonor - this method deletes a donar and his details from the CurrentDonars database and returns true.
+                            If the donar is not present in the CurrentDonars database, it returns false.
+             
+     getAllCurrentDonors - this method returns a list of all the currently willing donars and their respective details, each in the form of CurrentDonar object.
+                         
+
+*/
+
+
 package com.example.phase1;
 
 import android.util.Log;
