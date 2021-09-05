@@ -1,7 +1,10 @@
 /*
-    This class acts as the Adapter for the Recycler view of editing the feedbacks of an user.
-    The user can modify or delete the feedbacks that he/she posted.
+
+This has the logic to implement a RecyclerView.
+This is not used anywhere in the app.
+
 */
+
 package com.example.phase1;
 
 import android.content.Intent;
@@ -44,7 +47,7 @@ public class EditFeedbackRecView extends RecyclerView.Adapter<EditFeedbackRecVie
         holder.feedback.setText(list.get(position).getComment());
         holder.save.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {                    
+            public void onClick(View view) {
                 list.get(position).setComment(holder.feedback.getText().toString());
                 FeedBackClass.modifyComment(list.get(position));
                 Toast.makeText(holder.itemView.getContext(), "Successfully Saved", Toast.LENGTH_SHORT).show();
