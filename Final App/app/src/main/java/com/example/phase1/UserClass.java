@@ -1,6 +1,6 @@
 
 /*
-    This Class contains only static methods which can be used to manipulate the users database.
+    This Class contains only static methods which can be used to manipulate the users database and deal with the users database.
     
     It provides methods like:
     getUser - this returns an object of the type User that has all the details by grabbing the information from the Users database using the name which
