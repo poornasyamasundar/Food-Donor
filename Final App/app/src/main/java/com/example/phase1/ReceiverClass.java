@@ -1,3 +1,27 @@
+
+/*
+    This Class contains only static methods which can be used to manipulate the receivers database.
+    
+    
+    It provides methods like:
+    getReceiver - this returns an object of the type  Receiver that has all the required details by grabbing the information from the  Receivers database using the name which
+                        is unique.
+    insertReceiver - this takes in an object of the type  Receiver and inserts this data into the Receivers database.
+                           
+    
+    updateReceiver - this updates the details of the  receiver if his details are already there in the Receivers database and return true.
+                         If this receiver is not there in the Receivers database, then this method returns false.
+                         
+    deleteReceiver - this method deletes a receiver and his details from the Receivers database and returns true.
+                            If the receiver is not present in the Receivers database, it returns false.
+             
+     getAllReceivers - this method returns a list of all the receivers present in the Receivers database and their respective details, each in the form of Receiver object.
+                         
+    
+ 
+ */
+
+
 package com.example.phase1;
 
 import android.util.Log;
