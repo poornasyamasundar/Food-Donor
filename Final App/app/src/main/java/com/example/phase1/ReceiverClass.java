@@ -17,7 +17,7 @@
              
      getAllReceivers - this method returns a list of all the receivers present in the Receivers database and their respective details, each in the form of Receiver object.
                          
-    
+    getCount - returns the total number of donars registered in our app
  
  */
 
