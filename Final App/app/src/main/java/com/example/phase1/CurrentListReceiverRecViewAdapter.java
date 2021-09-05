@@ -1,3 +1,7 @@
+/*
+    This class acts as the Adapter for the Recycler view of available receivers/current receivers in the app
+    The Entire Class is straight forward.
+*/
 package com.example.phase1;
 
 import android.content.Intent;
