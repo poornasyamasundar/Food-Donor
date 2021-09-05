@@ -1,3 +1,13 @@
+/*
+
+This class provides methods that are used in the app for security.
+It uses the already present Encryption libraries in java.
+Given a string, encrypt method returns it's encrypted form
+Given the encrypted string ,decrypt method returns the original string.
+
+*/
+
+
 package com.example.phase1;
 
 import java.security.Key;
