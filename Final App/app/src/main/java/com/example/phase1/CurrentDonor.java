@@ -8,6 +8,7 @@ in the object of this class.
 SO , to deal with all the cases where we need these details, it would be easier to deal with the object 
 of this type
 
+So, this class has only getters and setters to deal with the property variables.
 
 */
 
