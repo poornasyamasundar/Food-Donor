@@ -1,3 +1,12 @@
+
+/*
+
+This class deals with the logic for the page that lists all the currently willing donars using a RecylerView.
+Here, we instantiate the adapter that we have defined and set this adapter as the adapter to the recyclerview.
+We also pass the information required by the adapter object from here.
+
+*/
+
 package com.example.phase1;
 
 import androidx.appcompat.app.AppCompatActivity;
