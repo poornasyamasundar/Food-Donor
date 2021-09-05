@@ -1,3 +1,12 @@
+/*
+    This Class handles the login activity.
+    If the user is not logged in already into the app then the user need to login with his username and password.
+    If the user is a new user he can register by clicking the register button.
+    It first checks if the username exists or not
+    then checks if the password is correct or not.
+    If both of them are correct then the user can view his profile by going back to the home page.
+    the user need to login only once in a device, the login information is stored in the device itself.
+*/
 package com.example.phase1;
 
 import androidx.appcompat.app.AppCompatActivity;
