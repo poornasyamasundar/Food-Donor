@@ -3,6 +3,21 @@
     This Class contains only static methods which can be used to manipulate the donors list.
     The Database Table containing the Donor list is DonorList,
     
+    It provides methods like:
+    getDonar - this returns an object of the type Donar that has all the required details by grabbing the information from the Donars database using the name which
+                        is unique.
+    insertDonar - this takes in an object of the type Donar and inserts this data into the DOnars database.
+                           
+    
+    updateDonor - this updates the details of the  donar if his details are already there in the Donars database and return true.
+                         If this donar is not there in the Donars database, then this method returns false.
+                         
+    deleteDonor - this method deletes a donar and his details from the Donars database and returns true.
+                            If the donar is not present in the CurrentDonars database, it returns false.
+             
+     getAllDonors - this method returns a list of all the donars present in the Donars database and their respective details, each in the form of Donar object.
+                         
+    
  
  */
 
