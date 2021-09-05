@@ -1,3 +1,11 @@
+
+/*
+
+This is to implement a RecyclerView.
+But it is not used anywhere in our app.
+
+*/
+
 package com.example.phase1;
 
 import android.content.Intent;
