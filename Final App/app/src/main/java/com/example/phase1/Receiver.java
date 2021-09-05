@@ -6,5 +6,14 @@ This class is same as the Donar class. So we simply extended the Donar class.
  */
 public class Receiver extends Donor
 {
+@Override
+    public String toString() {
+        return "Receiver{" +
+                "name='" + name + '\'' +
+                ", type=" + type +
+                ", phno='" + phno + '\'' +
+                ", address='" + address + '\'' +
+                ", email='" + email + '\'' +
+                '}';
 
 }
