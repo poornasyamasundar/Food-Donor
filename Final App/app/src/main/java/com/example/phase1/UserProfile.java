@@ -1,5 +1,10 @@
 
 
+/*
+This class is used to define the logic of the page that shows user's profile .
+This sets the text of the TextView and EditView elements present in the related page whenever the page is opened.
+It also implements onClickListener's for the buttons present in that page.
+*/
 
 package com.example.phase1;
 
