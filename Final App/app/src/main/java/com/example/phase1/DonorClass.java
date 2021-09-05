@@ -17,7 +17,7 @@
              
      getAllDonors - this method returns a list of all the donars present in the Donars database and their respective details, each in the form of Donar object.
                          
-    
+    getCount - returns the total number of donars registered in our app
  
  */
 
