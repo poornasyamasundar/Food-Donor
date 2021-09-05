@@ -1,3 +1,11 @@
+
+/*
+    This Class contains only static methods which can be used to manipulate the donors list.
+    The Database Table containing the Donor list is DonorList,
+    
+ 
+ */
+
 package com.example.phase1;
 
 import android.util.Log;
@@ -9,10 +17,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-/*
-    This Class contains only static functions which can be used to manipulate the donors list.
-    The Database Table containing the Donor list is DonorList,
- */
+
 public class DonorClass
 {
     public static Donor getDonor( String name )     // Given a donor's name this function returns the corresponding donor object from the database.
