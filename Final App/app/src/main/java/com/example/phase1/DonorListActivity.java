@@ -1,3 +1,11 @@
+
+/*
+
+This class has method used to manipulate the donorlist viewing page of the app.
+The method sets the adapter to the RecyclerView after sending data to the adapter
+
+*/
+
 package com.example.phase1;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -6,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
-// This function is used to manipulate the donorlist viewing page of the app.
+
 public class DonorListActivity extends AppCompatActivity {
 
     private RecyclerView donorlist;
