@@ -17,6 +17,8 @@ public class ReceiverDetails extends AppCompatActivity {
     private EditText phone;
     private EditText meals;
     private Button done;
+    private EditText house;
+    private EditText locality;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -28,10 +30,14 @@ public class ReceiverDetails extends AppCompatActivity {
         phone = findViewById(R.id.phoneValue);
         meals = findViewById(R.id.mealsValue);
         done = findViewById(R.id.done);
+        house = findViewById(R.id.houseValue);
+        locality = findViewById(R.id.localityValue);
 
         name.setText("Yashwanth");
         address.setText("Hyderabad");
         phone.setText("9390132226");
+        house.setText("y");
+        locality.setText("y");
 
 
         done.setOnClickListener(new View.OnClickListener() {
@@ -41,9 +47,13 @@ public class ReceiverDetails extends AppCompatActivity {
                 {
                     toastMsg();
                 }
-                if(phone.getText().toString().length() != 10)
+                if(phone.getText().toString().length() != 10 || meals.getText().toString().length()==0)
                 {
                     toastMsg();
+                }
+                if(house.getText().toString().length()==0 || locality.getText().toString().length()==0 || address.getText().toString().length()==0)
+                {
+                    toastMsg2();
                 }
 
                 // other functionalities to be added
@@ -66,5 +76,10 @@ public class ReceiverDetails extends AppCompatActivity {
     public void toastMsg()
     {
         Toast.makeText(this,"Data entered for Phone number or meals is Invalid!!!" , Toast.LENGTH_SHORT).show();
+    }
+
+    public void toastMsg2()
+    {
+        Toast.makeText(this,"Enter Location details properly!!!" , Toast.LENGTH_SHORT).show();
     }
 }
