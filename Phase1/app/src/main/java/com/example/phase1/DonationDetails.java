@@ -10,7 +10,7 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class donationDetails extends AppCompatActivity {
+public class DonationDetails extends AppCompatActivity {
 
     private TextView name;
     private EditText address;
@@ -21,7 +21,7 @@ public class donationDetails extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.donationdetails);
+        setContentView(R.layout.donation_details);
 
         name = findViewById(R.id.nameValue);
         address = findViewById(R.id.addressValue);
