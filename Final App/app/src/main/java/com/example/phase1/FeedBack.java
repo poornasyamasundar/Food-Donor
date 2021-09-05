@@ -1,3 +1,13 @@
+
+/*
+
+This class wraps all the required information to store the user given comments into our database.
+When we have to add/change/delete comments from the database, we pass in an object of FeedBack class to make the work simpler and easy to understand.
+When we want to work with the feedback data and its corresponding database, we deal with these objects.
+This has all the getters and setters
+
+*/
+
 package com.example.phase1;
 import androidx.annotation.NonNull;
 
