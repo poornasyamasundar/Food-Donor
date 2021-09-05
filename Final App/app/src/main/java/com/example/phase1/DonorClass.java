@@ -13,7 +13,7 @@
                          If this donar is not there in the Donars database, then this method returns false.
                          
     deleteDonor - this method deletes a donar and his details from the Donars database and returns true.
-                            If the donar is not present in the CurrentDonars database, it returns false.
+                            If the donar is not present in the Donars database, it returns false.
              
      getAllDonors - this method returns a list of all the donars present in the Donars database and their respective details, each in the form of Donar object.
                          
