@@ -1,7 +1,6 @@
 
 /*
-    This Class contains only static methods which can be used to manipulate the donors list.
-    The Database Table containing the Donor list is DonorList,
+    This Class contains only static methods which can be used to manipulate the donors database.
     
     It provides methods like:
     getDonar - this returns an object of the type Donar that has all the required details by grabbing the information from the Donars database using the name which
